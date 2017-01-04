@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Job Trends</title>
+	<script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script>
+	<link rel="stylesheet" href="/style/style.css" />
+    </head>
+<body>
+<h1>Job Trends</h1>
+<button onclick="SalChart()">Salary Chart</button>
+<button onclick="JobMap()">Jobs Map</button>
+<button onclick="SalMap()">Salary Map</button>
+<button onclick="SalJob()">Salary by Job</button>
+<button onclick="OccuCount()">Occupations Count</button>
+</br></br>
+<iframe id="cont" height=85% width=100% src="/scripts/text.html"> </iframe>
+
+<script>
+function SalChart()
+{
+document.getElementById("cont").setAttribute("src", "http://skillscouts.mybluemix.net/"); 
+}
+function JobMap()
+{
+document.getElementById("cont").setAttribute("src", "http://iit-test.mybluemix.net/dashboard%28map_count%29.html"); 
+}
+function SalMap()
+{
+document.getElementById("cont").setAttribute("src", "http://iit-test.mybluemix.net/dashboard%28salary%29.html"); 
+}
+function SalJob()
+{
+document.getElementById("cont").setAttribute("src", "http://iit-test.mybluemix.net/dashboard%28salarymapvisualisation%29.html"); 
+}
+function OccuCount()
+{
+document.getElementById("cont").setAttribute("src", "http://iit-test.mybluemix.net/dashboard.html"); 
+}
+</script>
+
+</body>
+</html>
+
